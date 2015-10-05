@@ -8,6 +8,7 @@ Many other methods are available but this one does not include additional librar
 Instructions:
 
 **Date:
+
    1-paste the "single_post_arabic_date" function in your theme's functions.php file
    2-Inside your wordpress loop call the function to display the date using the following method:
    
@@ -24,6 +25,7 @@ Instructions:
     
     
   **Time:
+  
    1-paste the "single_post_arabic_time" function in your theme's functions.php file
    2-Inside your wordpress loop call the function to display the time using the following method:
    
