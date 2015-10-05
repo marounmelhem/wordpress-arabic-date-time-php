@@ -16,10 +16,9 @@ Instructions:
         $postdate_d = get_the_date('d');<br/>
         $postdate_d2 = get_the_date('D');<br/>
         $postdate_m = get_the_date('M');<br/>
-        $postdate_y = get_the_date('Y');<br/><br/>
-        
+        $postdate_y = get_the_date('Y');<br/>
         echo single_post_arabic_date($postdate_d, $postdate_d2, $postdate_m, $postdate_y);
-      ?><br/>
+      ?>
    </pre> 
     
   **Time:<br/><br/>
@@ -30,8 +29,7 @@ Instructions:
            $posttime_h = get_the_date('h');<br/>
            $posttime_i = get_the_date('i');<br/>
            $posttime_s = get_the_date('d');<br/>
-           $posttime_a = get_the_date('A');<br/><br/>
-           
+           $posttime_a = get_the_date('A');<br/>
            echo single_post_arabic_time($posttime_h,$posttime_i,$posttime_a);
-          ?><br/>
+          ?>
    </pre>
