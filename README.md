@@ -11,8 +11,8 @@ Instructions:
 
    1-paste the "single_post_arabic_date" function in your theme's functions.php file
    2-Inside your wordpress loop call the function to display the date using the following method:
-   
-   <date>
+   <code>
+    <date>
       <?php
         $postdate_d = get_the_date('d');
         $postdate_d2 = get_the_date('D');
@@ -22,7 +22,7 @@ Instructions:
         echo single_post_arabic_date($postdate_d, $postdate_d2, $postdate_m, $postdate_y);
       ?>
     </date>
-    
+   </code 
     
   **Time:
   
