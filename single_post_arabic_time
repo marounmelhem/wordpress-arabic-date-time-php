@@ -1,0 +1,18 @@
+/**
+ * arabic time translator
+ * 
+ */
+function single_post_arabic_time($posttime_h, $posttime_i, $posttime_a) {
+
+    $ampm = array("AM", "PM");
+    $ampmreplace = array("ق.ظ", "ب.ظ");
+    $ar_ampm = str_replace($ampm, $ampmreplace, $posttime_a);
+
+    header('Content-Type: text/html; charset=utf-8');
+    $standardletters = array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
+    $eastern_arabic_letters = array("٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩");
+    $post_time = $posttime_h . ':' . $posttime_i." ".$ar_ampm;
+    $arabic_time = str_replace($standardletters, $eastern_arabic_letters, $post_time);
+
+    return $arabic_time;
+}
